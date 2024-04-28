@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 // mongoose.set('debug', true);
 
 
-const connection = mongoose.createConnection(`mongodb://127.0.0.1:27017/ToDoDB`).on('open',()=>{console.log("MongoDB Connected");}).on('error',()=>{
+const connection = mongoose.createConnection(`mongodb+srv://ishansangani:Ishan123@cluster0.naowgnd.mongodb.net/`).on('open',()=>{console.log("MongoDB Connected");}).on('error',()=>{
     console.log("MongoDB Connection error");
 });
 
